@@ -9,3 +9,5 @@ Let us test a merge
 Data analysis is fun!
 
 More issues!
+
+Get an error!
