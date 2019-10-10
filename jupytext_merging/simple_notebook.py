@@ -1,38 +1,22 @@
 # ---
 # jupyter:
-#   jupytext_format_version: '1.3'
-#   jupytext_formats: md:markdown,py:light
+#   jupytext:
+#     formats: md:markdown,py:light
+#     text_representation:
+#       extension: .py
+#       format_name: light
+#       format_version: '1.3'
+#       jupytext_version: 0.8.6
 #   kernelspec:
 #     display_name: Python 3
 #     language: python
 #     name: python3
-#   language_info:
-#     codemirror_mode:
-#       name: ipython
-#       version: 3
-#     file_extension: .py
-#     mimetype: text/x-python
-#     name: python
-#     nbconvert_exporter: python
-#     pygments_lexer: ipython3
-#     version: 3.7.0
 # ---
 
 import numpy as np
-import altair as alt
-import pandas as pd
+import matplotlib.pyplot as plt
 
 x = np.linspace(0,6)
 y = np.sin(x)
-df = pd.DataFrame({'x': x, 'y': y})
 
-alt.Chart(df
-        ).mark_point(
-            color='red'
-        ).encode(
-            x='x:Q',
-            y='y:Q')
-
-print(1)
-
-
+plt.plot(x, y)
